@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+}
+
+.main-title {
+    color: white;
+    text-align: center;
+}
+
+.welcome-link{
+    text-decoration: none;
+}
+
+.navbar{
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;    
+    text-align: center;
+}
+
+.navbar-item{
+    color: #662c91;
+    text-decoration: none;
+    padding-right: 100px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.GIF{
+    justify-content: center;
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+.regular-title{
+    color: white;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.introduction-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-me-picture{
+    width: 50%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.personal-description{
+    width: 50%;
+    color: #662c91;
+    font-size: large;
+    font-weight: bold;
+}
+
+.button-container{
+    padding-top:100px;
+    display: flex;
+    justify-content: center;
+}
+
+.download-button{
+    background-color: #662c91;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+
