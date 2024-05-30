@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Alex Sanchez</title>
+    <title>Contact Me</title>
 </head>
 <body>
     <a href="index.html" class="welcome-link">
         <img class="personal-logo" src="media/alexsanchezLogo.png" alt="">
     </a>
+
     <nav class="navbar">
         <ul>
             <a href="about.html" class="navbar-item">About</a>
@@ -18,8 +19,21 @@
         </ul>
     </nav>
 
-    <div class="GIF">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2czdGw5dDB6aHJzeDByb21nY2JmZ2V6ZmFqNmFkNGdocnFtdzM5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/usXZmmgP9Z7kf39fnq/giphy.gif" alt="">
+    <h2 class="contact-me-title">Contact Me!</h2>
+
+    <div class="form-container">
+        <form class="contact-form">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Ryan Garcia">
+    
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" placeholder="ryangarcia@gmail.com">
+    
+            <label for="message">What should I know about you?</label>
+            <textarea name="mesasge" id="message" rows="4" placeholder="Your message here..."></textarea>
+    
+            <button type="submit">Connect!</button>
+        </form>
     </div>
 
     <footer class="footer">
