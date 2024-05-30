@@ -155,3 +155,67 @@ body{
 }
 
 
+@media(max-width: 750px){
+
+    .personal-logo{
+        width: 50%;
+    }
+
+    .navbar{
+        padding-left: 0;
+    }
+
+    .navbar-ul{
+        padding-inline-start: 0;
+    }
+
+    .navbar-item{
+        padding-right: 0;
+    }
+
+    .GIF-intro{
+        width: 75%;
+    }
+
+    .regular-title{
+        padding-left: 20px;
+    }
+
+    .footer{
+        padding: 0;
+    }
+
+    .introduction-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-me-picture{
+        width: 300px;
+    }
+
+    .personal-description{
+        padding: 0;
+        font-size: medium;
+        width: 100%;
+    }
+
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 15px;
+    }
+
+    .box{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 40px;
+        padding-left: 10px;
+    }
+
+
+
+}
