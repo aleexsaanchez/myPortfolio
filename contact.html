@@ -22,25 +22,70 @@
     <h2 class="contact-me-title">Contact Me!</h2>
 
     <div class="form-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <form method="POST" id="form" class="contact-form">
 
             <input type="hidden" name="access_key" value="78916cd6-99d0-4311-9210-8b281cd6da61">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Ryan Garcia">
-    
-            <label for="email">Email: </label>
-            <input type="text" name="email" id="email" placeholder="ryangarcia@gmail.com">
-    
-            <label for="message">What should I know about you?</label>
-            <textarea name="mesasge" id="message" rows="4" placeholder="Your message here..."></textarea>
-    
-            <button type="submit">Connect!</button>
+        
+            <input type="text" name="name" required placeholder="Ryan Garcia">
+            <input type="email" name="email" required placeholder="ryangarcia@gmail.com">
+            <textarea name="message" required placeholder="Your message here..."></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+        
+            <button type="submit">Submit Form</button>
+        
+            <div id="result"></div>
+        
         </form>
+        
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        
+        <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+        
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+          result.innerHTML = "Please wait..."
+        
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = "Form submitted successfully";
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function() {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+        </script>
     </div>
 
     <footer class="footer">
         <p>Copyright &copy; 2024 Alex Sanchez</p>
     </footer>
 
+    <script src="contact.js"></script>
+    
 </body>
 </html>
