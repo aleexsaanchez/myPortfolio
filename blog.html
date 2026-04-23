@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Future blog space for Alex Sanchez covering cybersecurity, discipline, and growth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>My Blog</title>
+  <title>Blog | Alex Sanchez</title>
 </head>
 <body>
-    
-    <a href="index.html">
-        <h1 class="main-title">WELCOME LOGO</h1>
-    </a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand logo-link">
+        <img class="brand-mark" src="assets/alexsanchezLogo.png" alt="Alex Sanchez logo">
+        <span class="brand-copy">
+          <span class="brand-name">Alex Sanchez</span>
+          <span class="brand-tagline">Blog</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="blog.html" class="nav-link is-active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
 
-    <nav class="navbar">
-        <ul>
-            <a href="about.html" class="navbar-item">About</a>
-            <a href="projects.html" class="navbar-item">Projects</a>
-            <a href="contact.html" class="navbar-item">Contact</a>
-        </ul>
-    </nav>
-
-    <h2 class="regular-title">Let's talk...</h2>
-
-    <div class="blog">
-        <div class="post">
-          <h2>Post 1</h2>
-          <p>This is some text.</p>
-          <a class="read-more" href="#">Read More</a>
+    <main class="page">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Coming soon</p>
+            <h1 class="section-title">A place for cybersecurity notes and growth posts.</h1>
+          </div>
         </div>
-        <div class="post">
-          <h2>Post 2</h2>
-          <p>This is some text.</p>
-          <a class="read-more" href="#">Read More</a>
+
+        <div class="blog-card">
+          <p class="blog-excerpt">This page will eventually hold short posts about cybersecurity, compliance, discipline, and the lessons I learn while building projects. For now, it is a placeholder that sets the direction for future writing.</p>
+          <ul class="topic-list">
+            <li>Blue-team learning notes</li>
+            <li>Compliance and defense ideas</li>
+            <li>Discipline, training, and consistency</li>
+          </ul>
         </div>
-        <div class="post">
-          <h2>Post 3</h2>
-          <p>This is some text.</p>
-          <a class="read-more" href="#">Read More</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Alex Sanchez. Built with focus and room to grow.</p>
+        <div class="footer-links">
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
+    </footer>
+  </div>
 </body>
 </html>

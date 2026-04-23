@@ -3,28 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Sanchez's portfolio: cybersecurity student, blue-team focus, projects, about, and contact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Alex Sanchez</title>
+    <title>Alex Sanchez | Cybersecurity Portfolio</title>
 </head>
 <body>
-    <a href="index.html" class="welcome-link">
-        <img class="personal-logo" src="assets/alexsanchezLogo.png" alt="">
-    </a>
-    <nav class="navbar">
-        <ul class="navbar-ul">
-            <a href="about.html" class="navbar-item">About</a>
-            <a href="projects.html" class="navbar-item">Projects</a>
-            <a href="contact.html" class="navbar-item">Contact</a>
-        </ul>
-    </nav>
+    <div class="site-shell">
+        <header class="site-header">
+            <a href="index.html" class="brand logo-link">
+                <img class="brand-mark" src="assets/alexsanchezLogo.png" alt="Alex Sanchez logo">
+                <span class="brand-copy">
+                    <span class="brand-name">Alex Sanchez</span>
+                    <span class="brand-tagline">Cybersecurity student and builder</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link is-active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
 
-    <div class="GIF">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2czdGw5dDB6aHJzeDByb21nY2JmZ2V6ZmFqNmFkNGdocnFtdzM5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/usXZmmgP9Z7kf39fnq/giphy.gif" alt="GIF" class="GIF-intro">
+        <main class="page">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Minimal portfolio. Real focus.</p>
+                    <h1 class="hero-title">Building toward blue-team work.</h1>
+                    <p class="hero-text">I’m Alex Sanchez, a computer science and cybersecurity student focused on discipline, steady growth, and practical security work. This portfolio will grow with my projects, my learning, and eventually a blog about cybersecurity and the habits that keep me moving forward.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="about.html">Read About Me</a>
+                        <a class="btn btn-secondary" href="projects.html">View Featured Project</a>
+                    </div>
+                </div>
+
+                <aside class="hero-panel">
+                    <div class="panel-frame">
+                        <img src="assets/myself.jpeg" alt="Alex Sanchez playing volleyball">
+                    </div>
+                    <div class="panel-copy">
+                        <p class="panel-label">Current focus</p>
+                        <h2>Cybersecurity, compliance, and hard-earned consistency.</h2>
+                        <p>I care about becoming someone the industry can trust. The work here will reflect that: thoughtful, secure, and grounded in practice.</p>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="stat">
+                            <span class="stat-value">Blue Team</span>
+                            <span class="stat-text">Security-first mindset</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">Projects</span>
+                            <span class="stat-text">Built with intention</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">Growth</span>
+                            <span class="stat-text">Day by day</span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">Featured work</p>
+                        <h2 class="section-title">One project that shows how I think.</h2>
+                    </div>
+                    <a class="btn btn-secondary" href="projects.html">See the full project page</a>
+                </div>
+
+                <div class="project-card">
+                    <p class="card-label">Loudflare Edge Security Lab</p>
+                    <h3 class="card-title">A hardened serverless environment at alexsanchez.site</h3>
+                    <p class="project-copy">I moved the security perimeter to the edge with a zero-trust approach, removing public origin exposure and tightening the experience with Cloudflare Workers and WAF rules.</p>
+                    <ul class="project-list">
+                        <li>Zero Trust access with GitHub OAuth and OTP</li>
+                        <li>Layer 7 WAF tuning for SQLi, XSS, and reconnaissance probes</li>
+                        <li>Security headers and information masking at the edge</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">What this site will become</p>
+                        <h2 class="section-title">A portfolio now, a writing space later.</h2>
+                    </div>
+                </div>
+
+                <div class="grid two-up">
+                    <article class="content-card">
+                        <p class="card-label">About</p>
+                        <h3 class="card-title">A disciplined student-athlete with a cybersecurity focus.</h3>
+                        <p class="card-copy">My background mixes technical learning, volleyball, hybrid training, and a strong work ethic. That combination shapes how I build, how I learn, and how I show up every day.</p>
+                        <a class="btn btn-secondary" href="about.html">Read the full story</a>
+                    </article>
+
+                    <article class="content-card">
+                        <p class="card-label">Future blog</p>
+                        <h3 class="card-title">Cybersecurity notes, discipline, and long-term growth.</h3>
+                        <p class="card-copy">When I start writing regularly, this is where I’ll share lessons from labs, compliance work, and the habits that help me stay consistent.</p>
+                        <a class="btn btn-secondary" href="blog.html">See the blog direction</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <p class="footer-copy">© 2026 Alex Sanchez. Built with focus and room to grow.</p>
+                <div class="footer-links">
+                    <a href="contact.html">Contact</a>
+                    <a href="assets/PersonalCV.pdf" download>Resume</a>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <p>Copyright &copy; 2024 Alex Sanchez</p>
-    </footer>
 
 </body>
 </html>

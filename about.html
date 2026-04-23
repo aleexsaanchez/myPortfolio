@@ -3,41 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Alex Sanchez: cybersecurity student, athlete, and builder focused on blue team work and growth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>About | Alex Sanchez</title>
 </head>
 <body>
-    <a href="index.html" class="welcome-link">
-        <img class="personal-logo" src="assets/alexsanchezLogo.png" alt="">
-    </a>
+    <div class="site-shell">
+        <header class="site-header">
+            <a href="index.html" class="brand logo-link">
+                <img class="brand-mark" src="assets/alexsanchezLogo.png" alt="Alex Sanchez logo">
+                <span class="brand-copy">
+                    <span class="brand-name">Alex Sanchez</span>
+                    <span class="brand-tagline">About</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link is-active">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
 
-    <nav class="navbar">
-        <ul class="navbar-ul">
-            <a href="about.html" class="navbar-item">About</a>
-            <a href="projects.html" class="navbar-item">Projects</a>
-            <a href="contact.html" class="navbar-item">Contact</a>
-        </ul>
-    </nav>
+        <main class="page">
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">About me</p>
+                        <h1 class="section-title">A builder, athlete, and cybersecurity student.</h1>
+                    </div>
+                </div>
 
-    <h2 class="regular-title">About me...</h2>
+                <div class="contact-layout">
+                    <div class="contact-card">
+                        <div class="panel-frame">
+                            <img src="assets/myself.jpeg" alt="Alex Sanchez playing volleyball">
+                        </div>
+                        <p class="page-copy">I’m Alex Sanchez, a computer science and cybersecurity student at Reinhardt University with a strong interest in blue-team work, compliance, and defense. I care about learning the right way, building practical projects, and becoming someone the industry can rely on.</p>
+                        <a class="btn btn-secondary" href="assets/PersonalCV.pdf" download>Download Resume</a>
+                    </div>
 
-    <div class="introduction-container">
+                    <div class="form-card">
+                        <article class="content-card">
+                            <p class="card-label">Background</p>
+                            <p class="card-copy">Originally from Spain and now based in the United States, I bring a global perspective to the way I work and communicate. My experience in volleyball and hybrid training has reinforced discipline, consistency, and performance under pressure.</p>
+                        </article>
 
-        <img src="/assets/myself.jpeg" alt="Alex playing volleyball" class="about-me-picture">
-        
-        <p class="personal-description">Hello! I'm Alex Sanchez, a dedicated cybersecurity enthusiast and passionate athlete hailing from the beautiful city of Palma de Mallorca, Spain. Currently, I'm leveraging my skills both academically and athletically at Reinhardt University. Pursuing a major in cybersecurity alongside minors in computer science and mathematics at Reinhardt University, I'm deeply engaged in understanding the intricacies of safeguarding digital landscapes. I'm eager to contribute to the ever-evolving field of cybersecurity with my expertise and commitment to excellence. As a proud member of the Spanish National Team and honored to lead as the captain of the Men's Volleyball Team at Reinhardt University, I've learned the importance of teamwork, discipline, and perseverance. Through volleyball, I've cultivated invaluable leadership skills that transcend the court into every aspect of my life. Beyond academics and athletics, I find immense fulfillment in giving back to my community. Engaging in various community service activities, I strive to make a positive impact and inspire others to do the same.
+                        <article class="content-card">
+                            <p class="card-label">How I work</p>
+                            <ul class="info-list">
+                                <li>Understand the problem before jumping into a solution</li>
+                                <li>Research, build, test, and improve in small iterations</li>
+                                <li>Stay consistent even when progress is slow</li>
+                                <li>Keep raising the standard for the next version</li>
+                            </ul>
+                        </article>
 
-            Let's connect! I'm always eager to network with like-minded individuals passionate about cybersecurity, athletics, and making a difference in their communities.</p>
+                        <article class="content-card">
+                            <p class="card-label">What matters to me</p>
+                            <ul class="info-list">
+                                <li>Discipline over motivation</li>
+                                <li>Growth over comfort</li>
+                                <li>Ownership over excuses</li>
+                                <li>Curiosity over assumptions</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
 
+        <footer class="footer">
+            <div class="footer-inner">
+                <p class="footer-copy">© 2026 Alex Sanchez. Built with focus and room to grow.</p>
+                <div class="footer-links">
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <div class="button-container">
-        <a class="download-button" href="assets/PersonalCV.pdf" download>Download My Resume</a>
-    </div>
-
-    <footer class="footer">
-        <p>Copyright &copy; 2024 Alex Sanchez</p>
-    </footer>
     
 </body>
 </html>

@@ -3,43 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured cybersecurity project work by Alex Sanchez.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>My Projects</title>
+  <title>Projects | Alex Sanchez</title>
 </head>
 <body>
-    
-  <a href="index.html" class="welcome-link">
-    <img class="personal-logo" src="assets/alexsanchezLogo.png" alt="">
-</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand logo-link">
+        <img class="brand-mark" src="assets/alexsanchezLogo.png" alt="Alex Sanchez logo">
+        <span class="brand-copy">
+          <span class="brand-name">Alex Sanchez</span>
+          <span class="brand-tagline">Projects</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link is-active">Projects</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
 
-    <nav class="navbar">
-        <ul class="navbar-ul">
-            <a href="about.html" class="navbar-item">About</a>
-            <a href="projects.html" class="navbar-item">Projects</a>
-            <a href="contact.html" class="navbar-item">Contact</a>
-        </ul>
-    </nav>
+    <main class="page">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Featured project</p>
+            <h1 class="section-title">Loudflare Edge Security Lab</h1>
+          </div>
+          <a class="btn btn-secondary" href="https://alexsanchez.site/" target="_blank" rel="noreferrer">Visit live site</a>
+        </div>
 
-    <h2 class="regular-title">My Projects: </h2>
+        <div class="project-card">
+          <p class="project-meta">A hardened serverless environment moved to the global edge.</p>
+          <p class="project-copy">I built and hardened a security-focused environment to reduce exposure, control access, and make the perimeter smarter. The goal was not just to make something that works, but something that reflects how I think about modern blue-team defense.</p>
+          <ul class="project-list">
+            <li>Zero Trust access with GitHub OAuth and OTP</li>
+            <li>WAF hardening for SQLi, XSS, and reconnaissance probes</li>
+            <li>Cloudflare Workers for security headers and information masking</li>
+            <li>Serverless-first approach to reduce public origin exposure</li>
+          </ul>
+        </div>
+      </section>
 
-    <div class="projects-container">
-        <div class="box">
-          <h2>Coming Soon...</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">What comes next</p>
+            <h2 class="section-title">More projects, better documentation, sharper execution.</h2>
+          </div>
         </div>
-        <div class="box">
-          <h2>Coming Soon...</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <div class="grid three-up">
+          <article class="content-card">
+            <p class="card-label">Project idea</p>
+            <h3 class="card-title">Blue-team lab writeups</h3>
+            <p class="card-copy">Small, practical experiments that show how I analyze, harden, and document security work.</p>
+          </article>
+          <article class="content-card">
+            <p class="card-label">Project idea</p>
+            <h3 class="card-title">Compliance learning notes</h3>
+            <p class="card-copy">Short case studies on policies, controls, and how security aligns with real organizational requirements.</p>
+          </article>
+          <article class="content-card">
+            <p class="card-label">Project idea</p>
+            <h3 class="card-title">Useful automation</h3>
+            <p class="card-copy">Scripts and tools that remove friction and make repeatable work easier to trust.</p>
+          </article>
         </div>
-        <div class="box">
-          <h2>Coming Soon...</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    </div>
+      </section>
+    </main>
 
     <footer class="footer">
-      <p>Copyright &copy; 2024 Alex Sanchez</p>
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Alex Sanchez. Built with focus and room to grow.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
     </footer>
+  </div>
 
   </body>
 </html>

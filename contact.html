@@ -3,89 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Alex Sanchez about cybersecurity, projects, or future opportunities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Contact Me</title>
+    <title>Contact | Alex Sanchez</title>
 </head>
 <body>
-    <a href="index.html" class="welcome-link">
-        <img class="personal-logo" src="assets/alexsanchezLogo.png" alt="">
-    </a>
+    <div class="site-shell">
+        <header class="site-header">
+            <a href="index.html" class="brand logo-link">
+                <img class="brand-mark" src="assets/alexsanchezLogo.png" alt="Alex Sanchez logo">
+                <span class="brand-copy">
+                    <span class="brand-name">Alex Sanchez</span>
+                    <span class="brand-tagline">Contact</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link is-active">Contact</a>
+            </nav>
+        </header>
 
-    <nav class="navbar">
-        <ul class="navbar-ul">
-            <a href="about.html" class="navbar-item">About</a>
-            <a href="projects.html" class="navbar-item">Projects</a>
-            <a href="contact.html" class="navbar-item">Contact</a>
-        </ul>
-    </nav>
+        <main class="page">
+            <section class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">Contact me</p>
+                        <h1 class="section-title">Let’s keep it simple and direct.</h1>
+                    </div>
+                </div>
 
-    <h2 class="contact-me-title">Contact Me!</h2>
+                <div class="contact-layout">
+                    <aside class="contact-card">
+                        <p class="page-copy">If you want to reach me about cybersecurity, collaboration, or future opportunities, send a message and I’ll get it in my inbox.</p>
+                        <ul class="info-list">
+                            <li>Email: <a href="mailto:4l3xsanchez@proton.me">4l3xsanchez@proton.me</a></li>
+                            <li>Focus: cybersecurity, compliance, and blue-team work</li>
+                            <li>Future: blog posts about learning and growth</li>
+                        </ul>
+                    </aside>
 
-    <div class="form-container">
-        <form method="POST" id="form" class="contact-form">
+                    <div class="form-card">
+                        <form id="contact-form" class="contact-form" method="POST" novalidate>
+                            <input type="hidden" name="access_key" value="78916cd6-99d0-4311-9210-8b281cd6da61">
+                            <input type="hidden" name="subject" value="New message from alexsanchez.site">
 
-            <input type="hidden" name="access_key" value="78916cd6-99d0-4311-9210-8b281cd6da61">
-        
-            <input type="text" name="name" required placeholder="Ryan Garcia">
-            <input type="email" name="email" required placeholder="ryangarcia@gmail.com">
-            <textarea name="message" required placeholder="Your message here..."></textarea>
-            <div class="h-captcha" data-captcha="true"></div>
-        
-            <button type="submit">Submit Form</button>
-        
-            <div id="result"></div>
-        
-        </form>
-        
-        <script src="https://web3forms.com/client/script.js" async defer></script>
-        
-        <script>
-        const form = document.getElementById('form');
-        const result = document.getElementById('result');
-        
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const formData = new FormData(form);
-          const object = Object.fromEntries(formData);
-          const json = JSON.stringify(object);
-          result.innerHTML = "Please wait..."
-        
-            fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: json
-                })
-                .then(async (response) => {
-                    let json = await response.json();
-                    if (response.status == 200) {
-                        result.innerHTML = "Form submitted successfully";
-                    } else {
-                        console.log(response);
-                        result.innerHTML = json.message;
-                    }
-                })
-                .catch(error => {
-                    console.log(error);
-                    result.innerHTML = "Something went wrong!";
-                })
-                .then(function() {
-                    form.reset();
-                    setTimeout(() => {
-                        result.style.display = "none";
-                    }, 3000);
-                });
-        });
-        </script>
+                            <div class="field-group">
+                                <label class="field-label" for="name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+                            </div>
+
+                            <div class="field-group">
+                                <label class="field-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+                            </div>
+
+                            <div class="field-group">
+                                <label class="field-label" for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="What would you like to talk about?"></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button class="btn btn-primary" type="submit">Send message</button>
+                                <p class="form-status" id="form-status" aria-live="polite"></p>
+                            </div>
+                        </form>
+                        <p class="contact-note">This form is set up to deliver straight to my inbox. If the form ever has issues, email me directly using the address above.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <p class="footer-copy">© 2026 Alex Sanchez. Built with focus and room to grow.</p>
+                <div class="footer-links">
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer class="footer">
-        <p>Copyright &copy; 2024 Alex Sanchez</p>
-    </footer>
-
-    <script src="contact.js"></script>
-    
 </body>
 </html>
