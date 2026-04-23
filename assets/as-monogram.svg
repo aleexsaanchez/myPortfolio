@@ -1,0 +1,7 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">A.S monogram</title>
+  <desc id="desc">Minimal A.S monogram.</desc>
+  <circle cx="128" cy="128" r="120" fill="#0B0B0B" stroke="#D8B98A" stroke-width="8"/>
+  <circle cx="128" cy="128" r="98" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+  <text x="128" y="156" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-8" fill="#F4F1EA">A.S</text>
+</svg>
